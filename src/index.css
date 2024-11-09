@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+input::placeholder {
+    color: black; /* Change to any color you like */
+    opacity: 1; /* Adjust opacity if needed */
+    font: bold;
+  }
+  textarea::placeholder {
+    color: black; /* Change to any color you like */
+    opacity: 1; /* Adjust opacity if needed */
+    font: bold;
+  }
+  

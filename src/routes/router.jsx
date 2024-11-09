@@ -6,6 +6,7 @@ import About from "../pages/About";
 import Notfound from "../pages/Notfound";
 import Shop from "../pages/Shop";
 import Courses from "../pages/Courses";
+import CourseDetail from "../pages/CourseDetail";
 
 const router = createBrowserRouter([
     {
@@ -31,7 +32,11 @@ const router = createBrowserRouter([
             {
                 path: "/courses",
                 element: <Courses/>
-            }
+            },
+            {
+                path: "/courses/:id",
+                element: <CourseDetail/>
+            },
         ]
     },
     {
