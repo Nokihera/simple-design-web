@@ -37,7 +37,7 @@ const Layout = () => {
         },
       ]);
   return (
-    <div className='px-28 flex flex-col'>
+    <div className='px-28 flex flex-col min-h-dvh'>
         <Heading linkEle={linkEle} setLinkEle={setLinkEle}/>
         <Outlet/>
         <Footer/>

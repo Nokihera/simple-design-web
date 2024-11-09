@@ -5,6 +5,7 @@ import {
 } from "firebase/firestore";
 import React, { useState } from "react";
 import { db } from "../api/firebase";
+import toast, { Toaster } from "react-hot-toast";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -23,6 +24,7 @@ const Contact = () => {
           subject,
           timestamp: serverTimestamp(),
         });
+        toast.success("Message successfully sent!");
       } catch (err) {
         alert(err.message);
       } finally {
@@ -31,11 +33,13 @@ const Contact = () => {
         setEmail("");
         setSubject("");
         setMessage("");
+        
       }
     }
   };
   return (
     <div className="grid grid-cols-2 px-7 mt-7 gap-5 flex-grow-35">
+      <Toaster position="top-center"/>
       <div className="flex flex-col gap-2">
         <h1 className="text-[#31241e] font-bold text-4xl">Contact</h1>
         <p className="text-[15px] text-[#31241e] font-semibold">

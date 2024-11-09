@@ -2,7 +2,7 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div>
+    <div className="pb-7">
       <div className="py-6">
         <div
           className="imgDiv h-[350px] bg-cover bg-center p-8 flex justify-start items-end"

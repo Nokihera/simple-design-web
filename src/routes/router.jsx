@@ -7,6 +7,8 @@ import Notfound from "../pages/Notfound";
 import Shop from "../pages/Shop";
 import Courses from "../pages/Courses";
 import CourseDetail from "../pages/CourseDetail";
+import AdminSignIn from "../pages/AdminSignIn";
+import Dashboard from "../pages/Dashboard";
 
 const router = createBrowserRouter([
     {
@@ -38,6 +40,14 @@ const router = createBrowserRouter([
                 element: <CourseDetail/>
             },
         ]
+    },
+    {
+        path: "/admin",
+        element: <AdminSignIn/>
+    },
+    {
+        path: "/admin/dashboard",
+        element: <Dashboard/>
     },
     {
         path: "*",
