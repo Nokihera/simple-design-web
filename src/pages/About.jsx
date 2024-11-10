@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="grid grid-cols-2 py-7 items-start">
+    <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 py-7 items-start">
       <img
         src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         alt=""

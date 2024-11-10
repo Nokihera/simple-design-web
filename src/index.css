@@ -33,4 +33,31 @@
       transform: translateX(-100%);
     }
   }
+  .mobileMenuBtn {
+    animation: mobileMenuBtnAnimation 0.3s ease-in-out forwards;
+  }
+  @keyframes mobileMenuBtnAnimation {
+    0%{
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(180deg);
+    }
+  }
+  .mobileMenuSection {
+    animation: mobileMenuSectionAnimation 0.5s ease-in-out forwards;
+  }
+  @keyframes mobileMenuSectionAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    40%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
   
