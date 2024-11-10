@@ -44,8 +44,8 @@ const Heading = ({ linkEle, setLinkEle }) => {
               to={`${ele.link}`}
               key={ele.id}
               onClick={() => linkClickBtn(ele.id)}
-              className={`text-[17px] text-gray-700 font-semibold border-b-2 border-[#f6f4f3] hover:border-gray-700 transition-all ease-in-out duration-[100ms] ${
-                ele.active === true ? "text-[#b98359] text-[19px]" : ""
+              className={`text-[17px]  font-semibold border-b-2 border-[#f6f4f3] hover:border-gray-700 transition-all ease-in-out duration-[100ms] ${
+                ele.active === true ? "text-[#b98359] text-[19px]" : "text-gray-700"
               } `}
             >
               {ele.name}
@@ -59,8 +59,8 @@ const Heading = ({ linkEle, setLinkEle }) => {
             to={`${ele.link}`}
             key={ele.id}
             onClick={() => linkClickBtn(ele.id)}
-            className={`text-[17px] text-gray-700 font-semibold border-b-2 border-[#f6f4f3] hover:border-gray-700 transition-all ease-in-out duration-[100ms] ${
-              ele.active === true ? "text-[#b98359] text-[19px]" : ""
+            className={`text-[17px]  font-semibold border-b-2 border-[#f6f4f3] hover:border-gray-700 transition-all ease-in-out duration-[100ms] ${
+              ele.active === true ? "text-[#b98359] text-[19px]" : "text-gray-700"
             } `}
           >
             {ele.name}
