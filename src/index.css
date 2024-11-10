@@ -1,14 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-input::placeholder {
-    color: black; /* Change to any color you like */
-    opacity: 1; /* Adjust opacity if needed */
-    font: bold;
-  }
+
+@layer components {
+  input::placeholder,
   textarea::placeholder {
-    color: black; /* Change to any color you like */
-    opacity: 1; /* Adjust opacity if needed */
-    font: bold;
+    color: black;
+    opacity: 1;
+    font-weight: bold;
+  }
+}
+
+  .slideShowSection {
+    animation: slideShowSectionAnimation 5s ease-in-out forwards;
+  }
+  
+  @keyframes slideShowSectionAnimation {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    15% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+    85% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
   }
   

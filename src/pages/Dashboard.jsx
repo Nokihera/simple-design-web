@@ -74,7 +74,7 @@ const AdminDashboard = () => {
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((user) => {
       if (!user) {
-        navigate("/login");
+        navigate("/admin");
       } else {
         setLoading(false);
         fetchPosts();
