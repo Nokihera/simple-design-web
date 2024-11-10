@@ -32,12 +32,12 @@ const Courses = () => {
   }
 
   return (
-    <div className="mt-7 grid grid-cols-2 gap-2">
+    <div className="py-7 grid grid-cols-2 gap-4 lg:gap-2">
       {coursesData?.map((course) => (
         <Link
           to={`/courses/${course.id}`}
           key={course.id}
-          className="px-8 flex flex-col gap-3"
+          className="lg:px-8 flex flex-col gap-3"
         >
           <h1 className="text-2xl font-bold text-gray-800 hover:text-orange-500 transition-all ease-in-out duration-300">
             {course.title}

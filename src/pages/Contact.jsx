@@ -38,7 +38,7 @@ const Contact = () => {
     }
   };
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 px-7 py-7 gap-5 flex-grow-35">
+    <div className="grid grid-cols-1 lg:grid-cols-2 lg:px-7 py-7 gap-5 flex-grow-35">
       <Toaster position="top-center"/>
       <div className="flex flex-col gap-2">
         <h1 className="text-[#31241e] font-bold text-4xl">Contact</h1>
